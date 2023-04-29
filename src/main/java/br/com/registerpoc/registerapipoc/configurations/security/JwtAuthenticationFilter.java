@@ -1,4 +1,4 @@
-package br.com.registerpoc.registerapipoc.security.config;
+package br.com.registerpoc.registerapipoc.configurations.security;
 
 import br.com.registerpoc.registerapipoc.services.impl.JwtService;
 import jakarta.servlet.FilterChain;
