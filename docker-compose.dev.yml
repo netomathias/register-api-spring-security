@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  server:
+    entrypoint: ["sh", "-c", "java -cp app:app/lib/* br.com.registerpoc.registerapipoc.RegisterApiPocApplication"]
+    environment:
+      - DATABASE_URL=jdbc:h2:mem:mydb
+      - DATABASE_USER=admin
+      - DATABASE_PW=admin
+      - JWT_SECRET=put your secret here
